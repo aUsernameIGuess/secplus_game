@@ -36,6 +36,11 @@ h2 {
 	background-color: #0056b3;
 }
 
+.grayed-out {
+	color: gray;
+	text-decoration: line-through;
+}
+
 footer {
 	background-color: #333;
 	color: #fff;
@@ -44,3 +49,44 @@ footer {
 	bottom: 0;
 	width: 100%;
 }
+
+#word-bank {
+	margin-top: 20px;
+	border: 1px solid #ddd;
+	padding: 10px;
+	background-color: #f9f9f9;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#word-bank-list {
+	display: flex; /*arrange items in a row*/
+	flex-wrap: wrap; /* allow items to wrap to the next row */
+	justify-content: center; /* center align the rows */
+	gap: 10px; /* add spacing between items */
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+
+#word-bank-list li {
+	margin: 5px 0;
+	padding: 5px 10px;
+	background-color: #e9ecef; /* subtle background for terms */
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+#word-bank-list li:hover {
+	background-color: #d6d8db; /*slightly darker hover effect*/
+}
+
+#word-bank-list li.grayed-out {
+	color: gray;
+	text-decoration: line-through;
+	background-color: #f8f9fa; /* lighter background for grayed terms */
+	cursor: not-allowed;
+}
+
