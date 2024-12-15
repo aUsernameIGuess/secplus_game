@@ -5,12 +5,40 @@
             "definition": "A type of a cyberattack that tricks users into revealing sensitive information via fake emails or websites."
         },
         {
+            "term": "Social Engineering",
+            "definition": "Manipulating individuals into divulging confidential information."
+        },
+	{
+	    "term": "Vishing",
+	    "definition": "A type of an attack where scammers use phone calls to trick individuals into revealing personal information, such as passwords or credit card numbers, by pretending to be a legitimate entity."
+	},
+	{
+	    "term": "Smishing",
+	    "definition": "An attack where cybercriminals will send deceptive text messages to lure victims into sharing personal or financial information, clicking on malicious links, or downloading harmful software or applications"
+	},
+	{
+ 	    "term": "Dumpster diving",
+	    "definition": "A cybersecurity threat that involves searching through trash for sensitive information to use in cyberattacks."
+	},
+	{
+	    "term": "Spear Phishing",
+	    "definition": "A cyberattack technique aimed at a specific individual or organization to trick them into revealing sensitive information by using personalized information to increase credibility."
+	},
+	{
             "term": "Ransomware",
             "definition": "A malware that encrypts data and demands payment for decryption."
         },
-        {
-            "term": "Social Engineering",
-            "definition": "Manipulating individuals into divulging confidential information."
-        }
+	{
+	    "term": "Trojans",
+	    "definition": "A type of malicous software that disguies itself as a legitimate or harmless program to trick users into downloading, installing, or excuiting it. Once activated, it will carry out harmful actions on the victims device or network."
+	},
+	{
+	    "term": "Worms",
+	    "definition": "A type of malicous software that can self-replicate itself by exploiting vulnerabilities in software, operating systems, or networks and spread without needing a host file or human interaction."
+	},
+	{
+	    "term": "Potentially unwanted programs(PUPs)",
+	    "definition": "Software applications that may not be malicious but can negatively impact your computer's performance, privacy, or security. Often installed along side legitimate software."
+	}	
     ]
 }

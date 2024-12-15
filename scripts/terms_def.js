@@ -2,6 +2,7 @@ let termsBank = {};
 let selectedTerms = [];
 let currentTerm = {};
 let score = 0;
+let attemptedQuestions = 0;
 
 console.log("Attempting to fetch:");
 fetch("https://sec-plus-game.s3.us-east-1.amazonaws.com/data/terms_definitions.json")
@@ -29,15 +30,29 @@ document.getElementById("start-game").addEventListener("click", () => {
 		alert("Please select a valid category!");
 		return;
 	}
-	selectedTerms = termsBank[selectedCategory];
+	selectedTerms = [...termsBank[selectedCategory]]; //clone the array`
+	score = 0 //reset score
+	attemptedQuestions = 0; //reset attempts
+	updateGameStatus();
 	startNewRound();
 });
 
 function startNewRound() {
 	if (selectedTerms.length === 0) {
-		alert("No terms available in this category.");
+		// calculating the final score
+		const percentage = (score / attemptedQuestions) * 100;
+		const feedbackMessage = percentage >= 70 ? "Nice Job! This is passing" : "Practice some more and try again later!";
+
+		//display the final score and feedback
+		document.getElementById("definition").textContent = `Game Over!`;
+		document.getElementById("feedback").textContent = `Your final score: ${score}/${attemptedQuestions} (${percentage.toFixed(2)}%). ${feedbackMessage}`;
+		
+		document.getElementById("user-input").style.display = "none";
+		document.getElementById("submit-answer").style.display = "none";
+
 		return;
 	}
+
 	// Selct a random term
 	const randomIndex = Math.floor(Math.random() * selectedTerms.length);
 	currentTerm = selectedTerms[randomIndex];
@@ -62,9 +77,19 @@ document.getElementById("submit-answer").addEventListener("click", () => {
 	} else {
 		document.getElementById("feedback").textContent = `Incorrect. The correct term was: ${currentTerm.term}`;
 	}
-
-	//move to the next question
-	setTimeout(() => {
-		startNewRound();
-	}, 2000);
+	
+	attemptedQuestions++;
+	
+	updateGameStatus();
+	removeAnsweredTerm();
+	startNewRound();
 });
+
+function updateGameStatus() {
+	document.getElementById("score").textContent = score;
+	document.getElementById("attempted").textContent = attemptedQuestions;
+}
+
+function removeAnsweredTerm() {
+	selectedTerms = selectedTerms.filter(term => term.term !== currentTerm.term);
+}
