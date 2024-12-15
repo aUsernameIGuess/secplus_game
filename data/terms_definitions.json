@@ -1,0 +1,16 @@
+{
+    "Attacks, Threats, and Vulnerabilities": [
+        {
+            "term": "Phishing",
+            "definition": "A type of a cyberattack that tricks users into revealing sensitive information via fake emails or websites."
+        },
+        {
+            "term": "Ransomware",
+            "definition": "A malware that encrypts data and demands payment for decryption."
+        },
+        {
+            "term": "Social Engineering",
+            "definition": "Manipulating individuals into divulging confidential information."
+        }
+    ]
+}
