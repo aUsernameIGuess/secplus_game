@@ -39,6 +39,157 @@
 	{
 	    "term": "Potentially unwanted programs(PUPs)",
 	    "definition": "Software applications that may not be malicious but can negatively impact your computer's performance, privacy, or security. Often installed along side legitimate software."
-	}	
+	},	
+	{
+	    "term": "Logic Bombs",
+	    "definition": "A type of malicious code or software that remains dormant within a system until a specific conditions are met, triggering an execution."
+	},
+	{
+            "term": "Cryptomalware",
+	    "definition": "a subset of ransomware that encrypts the victim's files or data using  strong encryption algorithms until the ransom is paid."
+	},
+	{
+	    "term": "Spyware",
+	    "definition": "a type of malicious software designed to secretly monitor and collect information about a user's activities without their knowledge or consent."	
+	},
+{
+            "term": "Remote Access Trojan (RAT)",
+            "definition": "A type of malware that allows an attacker to gain unauthorized access to a victim's computer, enabling them to control the system remotely and steal data or perform malicious actions."
+        },
+        {
+            "term": "Rootkit",
+            "definition": "A set of software tools designed to provide unauthorized root or administrative access to a system while concealing its presence from detection tools."
+        },
+        {
+            "term": "Backdoor",
+            "definition": "A hidden entry point into a system or application that bypasses normal authentication mechanisms, often used by attackers to maintain persistent access."
+        },
+        {
+            "term": "Spraying attack",
+            "definition": "A type of password attack where attackers try commonly used passwords across many accounts in a system to avoid triggering account lockouts due to repeated login failures."
+        },
+        {
+            "term": "Dictionary attack",
+            "definition": "An attack where cybercriminals use a precompiled list of words, phrases, or common passwords to attempt unauthorized access to an account or system."
+        },
+        {
+            "term": "Brute force (offline)",
+            "definition": "A password attack where attackers systematically try all possible combinations of passwords against a locally obtained hashed password file to crack the encryption."
+        },
+        {
+            "term": "Brute force (online)",
+            "definition": "A method of attempting to gain unauthorized access by trying multiple password combinations directly on a live system, often leading to account lockouts."
+        },
+        {
+            "term": "Rainbow table",
+            "definition": "A precomputed table used to reverse cryptographic hash functions and crack hashed passwords efficiently by matching hash values to plaintext passwords."
+        },
+        {
+            "term": "Plaintext/unencrypted (password attack)",
+            "definition": "An attack targeting passwords that are stored or transmitted in an unencrypted or plaintext format, making them vulnerable to interception and theft."
+        }	
+		
+    ],
+    "General Security Concepts":[
+	{
+	    "term": "Information Security",
+	    "definition": "Act of protecting data and information from unauthorized access, unlawful modification and disruption, disclosure, and corruption, and destruction"
+	},
+	{
+	    "term": "Information Systems Security",
+	    "definition": "Act of protecting the systems that hold and process the critical data."
+	},
+	 {
+            "term": "Confidentiality",
+            "definition": "A principle of cybersecurity that ensures sensitive information is kept private and protected from unauthorized access or disclosure."
+        },
+        {
+            "term": "Integrity",
+            "definition": "A principle of cybersecurity that ensures data is accurate, complete, and unaltered, preventing unauthorized modifications or corruption."
+        },
+        {
+            "term": "Availability",
+            "definition": "A principle of cybersecurity that ensures data and resources are accessible and usable when required by authorized users."
+        },
+        {
+            "term": "CIA",
+            "definition": "A foundational framework in cybersecurity that emphasizes the protection of data by ensuring confidentiality, integrity, and availability to maintain secure and reliable systems."
+        },
+	{
+	    "term": "Non-repudation",
+	    "definition": "Guaranteeing that a specific action or event has taken place and cannot be denied by the parties involved"
+	},
+	{
+            "term": "Authentication",
+            "definition": "The process of verifying the identity of a user or system."
+        },
+        {
+            "term": "Authorization",
+            "definition": "Defines what actions or resources a user can access"
+        },
+        {
+            "term": "Accounting",
+            "definition": "The process of tracking and logging user activities on a system for auditing or billing purpoes"
+        },
+        {
+            "term": "AAA",
+            "definition": "A security framework used to manage user access to systems, which involves authenticating the user's identity, authorizing access based on permissions, and accounting for actions taken by the user within the system."
+        },
+	 {
+            "term": "Security Controls",
+            "definition": "Measures or mechanisms implemented to protect the confidentiality, integrity, and availability of systems and data, preventing or mitigating potential security threats or vulnerabilities."
+        },
+        {
+            "term": "Technical",
+            "definition": "Security controls that use technology to protect systems and data, such as encryption, firewalls, and intrusion detection systems."
+        },
+        {
+            "term": "Managerial",
+            "definition": "Security controls focused on managing and overseeing security policies and procedures, such as risk management, governance, and compliance programs."
+        },
+        {
+            "term": "Operational",
+            "definition": "Security controls designed to ensure the daily operations of systems are secure, including procedures for monitoring, incident response, and maintaining security over time."
+        },
+        {
+            "term": "Physical",
+            "definition": "Security controls that protect the physical access to systems and infrastructure, such as locks, access control systems, and surveillance cameras."
+        },
+        {
+            "term": "Preventative",
+            "definition": "Security controls designed to prevent security incidents from occurring, such as firewalls, access controls, and antivirus software."
+        },	
+	{
+            "term": "Deterrent",
+            "definition": "Security controls intended to discourage potential attackers from attempting to compromise systems, such as warning signs, security policies, or visible surveillance cameras."
+        },
+        {
+            "term": "Detective",
+            "definition": "Security controls that identify and alert organizations to security incidents or breaches, such as intrusion detection systems (IDS) and security monitoring tools."
+        },
+        {
+            "term": "Corrective",
+            "definition": "Security controls designed to fix or recover from security incidents after they have occurred, such as restoring data from backups or applying patches to address vulnerabilities."
+        },
+        {
+            "term": "Compensating",
+            "definition": "Security controls that provide an alternative means of protection when the primary controls are not feasible or effective, such as additional monitoring or manual security processes."
+        },
+        {
+            "term": "Directive",
+            "definition": "Security controls that are put in place to guide or direct actions, such as policies, procedures, or training programs aimed at influencing behaviors or decision-making."
+        },
+	{
+	   "term": "Zero Trust",
+            "definition": "A security model that assumes no entity, whether inside or outside the network, can be trusted by default. Every request for access is verified, authenticated, and authorized based on strict policies, regardless of the user's location within the network."
+	},
+	 {
+            "term": "Control Plane",
+            "definition": "The part of a network or system that is responsible for making decisions about how data should be forwarded and routed. It handles tasks like traffic management, configuration, and network control policies."
+        },
+        {
+            "term": "Data Plane",
+            "definition": "The part of a network or system that is responsible for actually forwarding the data based on the instructions provided by the control plane. It deals with the transmission of data packets from source to destination."
+        }
     ]
 }

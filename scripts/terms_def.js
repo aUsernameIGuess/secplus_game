@@ -59,6 +59,7 @@ document.getElementById("start-game").addEventListener("click", () => {
     updateGameStatus();
     populateWordBank(selectedTerms); // Populate word bank at game start
     startNewRound();
+    document.getElementById("category-select").disabled = true; //disable category
 });
 
 function startNewRound() {
@@ -73,6 +74,7 @@ function startNewRound() {
         
         document.getElementById("user-input").style.display = "none";
         document.getElementById("submit-answer").style.display = "none";
+	document.ElementById("category-select").disabled = false; //re-enable category dropdown
         return;
     }
 

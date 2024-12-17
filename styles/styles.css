@@ -90,3 +90,9 @@ footer {
 	cursor: not-allowed;
 }
 
+#category-dropdown {
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0;
+	font-size: 1rem;
+}
