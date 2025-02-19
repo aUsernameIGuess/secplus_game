@@ -52,7 +52,7 @@
 	    "term": "Spyware",
 	    "definition": "a type of malicious software designed to secretly monitor and collect information about a user's activities without their knowledge or consent."	
 	},
-{
+	{
             "term": "Remote Access Trojan (RAT)",
             "definition": "A type of malware that allows an attacker to gain unauthorized access to a victim's computer, enabling them to control the system remotely and steal data or perform malicious actions."
         },
@@ -191,5 +191,15 @@
             "term": "Data Plane",
             "definition": "The part of a network or system that is responsible for actually forwarding the data based on the instructions provided by the control plane. It deals with the transmission of data packets from source to destination."
         }
+    ],
+    "Security Architecture":[
+	{
+	    "term": "Cloud",
+	    "definition": "The delievery of IT services over the internet"
+	},
+	{
+	    "term": "Infrastructure as Code (IaC)",
+	    "definition": "Is a practice of managing and provisioning IT infrastructure through code instead of natural processes"
+	}
     ]
 }
